@@ -64,7 +64,7 @@ export default function JobOpenings() {
                   </SelectTrigger>
                   <SelectContent>
                       {department_list.map((item)=> (
-                          <SelectItem value={item}>{item}</SelectItem>
+                          <SelectItem key={item} value={item}>{item}</SelectItem>
                       ))}
                   </SelectContent>
               </Select>
